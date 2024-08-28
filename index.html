@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./stilo.css">
+  
+</head>
+
+<body>
+  <header class="header-menu">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/aplicacao.png" alt="logo" style="height: 50px;">
+          <span>Modelo NavBar</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto"><!--espaçamento automatico com ms-auto-->
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-success px-4" href="#">Entrar</button> <!--px é pading em x-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="home d-flex align-items-center h-75" id="home"> <!--h é o height-->
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-xl-4">
+            <h1 class="text-white">Seja Bem Vindo</h1>
+            <p class="text-white">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+              impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de
+              tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
+              séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se
+              popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais
+              recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+            <button class="btn btn-success px-4">Saiba Mais</button>
+          </div>
+          <div class="col-xl-8 d-flex justify-content-end">
+            <img src="./img/notebook.png" class="img-fluid" alt="ilustracao">
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container-main">
+    <section class="projects mb-5 pb-5" id="projects">
+      <div class="container">
+        <h2 class="text-center pt-5 pb-3">Projetos</h2><!--p é o padding t é top e b é bottom-->
+        <p class="d-flex mx-auto text-center w-75 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <!--mx auto é margem automatica, mb=margem bottom-->
+        <div class="row">
+          <div class="col-xl-4 cards">
+            <div class="card">
+              <img src="img/p1.jpg" class="card-img-top" alt="Projeto 1">
+              <div class="card-body">
+                <h5 class="card-title text-center my-3">Card title</h5>
+                <p class="card-text text-center mb-5">Some quick example text to build on the card title and make up the
+                  bulk of the
+                  card's content.</p>
+                <button class="btn btn-primary d-flex mx-auto px-4">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 cards">
+            <div class="card">
+              <img src="img/p2.jpeg" class="card-img-top" alt="Projeto 1">
+              <div class="card-body">
+                <h5 class="card-title text-center my-3">Card title</h5>
+                <p class="card-text text-center mb-5">Some quick example text to build on the card title and make up the
+                  bulk of the
+                  card's content.</p>
+                <button class="btn btn-primary d-flex mx-auto px-4">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 cards">
+            <div class="card">
+              <img src="img/p3.png" class="card-img-top" alt="Projeto 1">
+              <div class="card-body">
+                <h5 class="card-title text-center my-3">Card title</h5>
+                <p class="card-text text-center mb-5">Some quick example text to build on the card title and make up the
+                  bulk of the
+                  card's content.</p>
+                <button class="btn btn-primary d-flex mx-auto px-4">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="about pb-5" id="about">
+      <div class="container mt-3">
+        <h2 class="text-center pb-3">texto de exemplo sobre projetos</h2>
+        <p class="d-flex mx-auto text-center w-75 mb-5 pb-3">Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+          unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="row mb-5 pb-5">
+          <div class="col-xl-5 espaco-entre">
+            <img src="img/mobile_1312271129.jpg" class="img-fluid" alt="exemplo landing page">
+          </div>
+          <div class="col-xl-7 d-flex align-items-center borda">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+        <div class="row mb-5 pb-5">
+          <div class="col-xl-7 d-flex align-items-center borda">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+              Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="col-xl-5 espaco-entre">
+              <img src="img/gestao-de-projetos-oonder.jpg" class="img-fluid" alt="exemplo landing page">
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="action pb-5">
+      <h2 class="text-center text-white pt-5 pb-4">Experimente criar</h2>
+      <button class="btn btn-success d-flex mx-auto mt-4">Criar conta</button>
+    </section>
+    <section class="colaboradores pt-5">
+      <div class="container pb-5">
+      <h2 class="text-center pt-5 pb-4">temos parcerias com empresas</h2>
+      <span class="d-flex justify-content-center pb-5 fs-5">veja as empresas</span> <!--fs é font-size-->
+        <div class="row text-center mb-4">
+          <div class="col-xl-4  border border-secundary">
+            <i class="bi bi-facebook">facebook</i>
+          </div>
+          <div class="col-xl-4 border border-secundary">
+            <i class="bi bi-twitter">twitter</i>
+          </div>
+          <div class="col-xl-4 border border-secundary">
+            <i class="bi bi-apple">apple</i>
+          </div>
+        </div>
+          <div class="row text-center">
+            <div class="col-xl-4 border border-secundary">
+              <i class="bi bi-youtube">youtube</i>
+            </div>
+            <div class="col-xl-4 border border-secundary">
+              <i class="bi bi-discord">discord</i>
+            </div>
+            <div class="col-xl-4 border border-secundary">
+              <i class="bi bi-spotify">spotify</i>
+            </div>
+          </div>
+          
+        
+        
+        
+        
+        
+        
+        
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+<div class="container">
+  <div class="row pb-5 pt-4">
+    <div class="col-xl-4">
+      <h4 class="text-white text-center">entre em contato</h4>
+      <div class="phones d-flex flex-column">
+        <span class="text-white text-center mt-4 mb-3"><i class="bi bi-whatsapp"></i>(55)9912939585</span>
+        <span class="text-white text-center"><i class="bi bi-telefone"></i>(55)998476539585</span>
+      </div>
+
+    </div>
+    <div class="col-xl-4 d-flex justify-content-center">
+      <figure class="figura">
+        <img src="img/aplicacao.png" alt="logo">
+        <figcaption class="text-white text-center lp-2 fw-semibold">página criativa</figcaption>
+      </figure>
+    </div>
+    <div class="col-xl-4">
+      <h4 class="text-white text-center">redes sociais</h4>
+      <div class="d-flex flex-column">
+        <span class="text-white text-center my-3"><i class="bi bi-facebook me-1"></i>facebook</span>
+        <span class="text-white text-center mb-3"><i class="bi bi-instagram me-1"></i>instagram</span>
+        <span class="text-white text-center me-4"><i class="bi bi-twitter"></i>twitter</span>
+      </div>
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12 d-flex pb-2">
+      <span class="text-white mx-auto">Angelo P.de Lima | &copy; copyryght 2024</span>
+  
+    </div>
+</div>
+
+</div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  
+</body>
+
+</html>
